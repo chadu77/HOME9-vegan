@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 18px;
+    color: #000000;
+}
+
+body{
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/natura.png);
+    background-repeat: no-repeat;
+    
+}
+
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.flexir{
+    justify-content: center;
+
+    
+}
+header nav ul li{ 
+    height: 70px;
+    border-radius: 0 35px 0 35px;
+    background-color: #79B331;
+    padding: 18px 24px;
+    margin: 30px;   
+    
+} 
+
+header nav ul li:hover{
+    background-color: #54831a;
+}
+
+
+
+header nav ul li:nth-child(2){
+    width: 125px;
+    
+}
+header nav ul li:nth-child(3){
+    width: 70px;
+    
+}
+/* --------------- main starts here------------ */
+
+
+.dro{
+    width: 432px;
+    height: 187px;
+    margin: 50px auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    align-content: space-evenly;
+}
+.wre{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #79B331;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    animation: triali 6s 20;
+    
+
+}
+@keyframes triali {
+    0%{top: 100px ;left: 100px;}
+    25%{top: 100px;left:320px}
+    50%{top: 175px; left: 320px}
+    75%{top: 175px; left: 100px}
+    100%{top: 100px; left: 100px;}
+    
+}
+.dro p, h2{
+    color: #080505;
+    
+    
+}
+.dro h2{
+    font-size: 24px;
+    
+}
+
+/*=-=-=-=-=-=-=-=-=-=  XE   =-=-=-==-==-=-= */
+
+.xe{
+
+    width: 1200px;
+    height: 400px;
+    margin: 330px auto;
+    margin-left: 300px;
+    position: relative;
+}
+.ghero{
+    width: 1px;
+    height: 400px;
+    background-color: #C4C4C4;
+    margin: 0 auto;
+    
+}
+.totebi{
+    width: 50%;
+    position: absolute;
+    top: -40px ;
+    left: 0;
+
+}
+.totebi2{
+    left: 50%;
+    top: 60px;
+}
+.totebi3{
+    top: 140px;
+}
+.totebi4{
+    left: 50%;
+    top: 240px;
+}
+.turn{
+    transform: rotate(90deg);
+}
+.potoli{
+    width: 70px;
+    height: 70px;
+    border-radius: 0 35px;
+    background-color: #C4C4C4;
+}
+.totebi p{
+    width: 70%;
+  
+    
+}
+.totebi:hover .potoli{
+    background-color: #79B331;
+}
+.totebi:hover p{
+    color: #79B331;
+}
+
+  /*========== responsive starts here====== */
+
+@media only screen and (max-width: 1024px) {
+    header{
+        width: 100%;
+    }
+    .dro{
+        margin-top: 10px;
+    }
+    .turn{
+        transform: rotate(0deg);
+    }
+    .totebi2, .totebi4{
+        flex-direction: row-reverse;
+        left: 0;
+    }
+    .xe{
+        width: 600px;
+        height: 250px;
+        margin: 50px auto;
+        margin-left: 300px;
+    }
+    .totebi{
+        width: 70%;
+    }
+    .ghero{
+        margin-left: 420px;
+        height: 280px;
+    }
+  }
+
+
+  
+/* ---------- shop html starts here------------*/
+
+main h2{
+    text-align: center;
+    color: #252525;
+    margin-top: 100px;
+}
+.shops{
+    width: 420px;
+    height: 420px;
+    margin: 100px auto;
+    flex-wrap: wrap;
+    padding: 5px;
+    
+}
+.shopebi {
+    width: 200px;
+    height: 200px;
+    background-color: #D9D9D9;
+    justify-content: space-evenly;
+    flex-direction: column;
+    
+    
+    
+}
+.shopebi p, .pawua{
+    display: none;
+    
+}
+.shopebi .pawua{
+    background-image: none;
+}
+.shopebi:hover p, .pawua, .img{
+    display: flex;
+    color: #ffffff;
+    
+}
+.shopebi:hover .pawua{
+    background-image: url(../img/placeholder\ 1.png);
+}
+.shopebi:hover{
+    background-color: #79B331;
+}
+
+
+
+
+.shopebi img:hover{
+    content: url(../img/shop\ 1.png);
+}
+
+
+
+.shopebi img{
+    width: 70px;
+    height: 70px;
+       
+}
+.pawua{
+    width: 18px;
+    height: 18px;
+   
+}
+.yidva{
+    text-align: center;
+}
+.pc{
+    width: 420px;;
+    height: 70px;;
+    margin: 100px auto;
+    background-color: #C4C4C4; 
+    
+}
+.pc img{
+    margin-left: 200px;
+    margin-top: 10px;
+    
+}
+.pc:hover{
+    background-color: #79B331;
+}
+/*  shopebi meorex= */
+.shop1{
+    flex-direction: column;
+    width: 620px; 
+    margin-left: 480px;
+}
+.shopebi1 img:hover{
+    content: "";
+}
+.shopebi1 p{
+    text-align: center;
+}
